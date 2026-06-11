@@ -4,13 +4,13 @@ compatibility_date = "2023-03-01"
 
 workers_dev = false
 routes = [
-    { pattern = "download.smtc2web.org/*", zone_name = "smtc2web.org" }
+    { pattern = "download.smtc2web.org/*", zone_name = "smtc2web-download" }
 ]
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
 # Docs: https://developers.cloudflare.com/r2/api/workers/workers-api-usage/
 r2_buckets  = [
-    { binding = "BUCKET_smtc2web", bucket_name = "smtc2web"}
+    { binding = "BUCKET_bucketname", bucket_name = "smtc2web"}
 ]
 
 [observability]
