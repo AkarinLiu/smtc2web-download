@@ -4,7 +4,7 @@ compatibility_date = "2023-03-01"
 
 workers_dev = false
 routes = [
-    { pattern = "download.smtc2web.org/*", zone_name = "smtc2web-download" }
+    { pattern = "download.smtc2web.org/*", zone_name = "smtc2web.org" }
 ]
 
 # Bind an R2 Bucket. Use R2 to store arbitrarily large blobs of data, such as files.
